@@ -4,7 +4,7 @@ Bonjour, Nal !
 
 Y'a quelques temps, je t'avais [expliqué comment faire un circuit integré avec QFlow](https://linuxfr.org/users/killruana/journaux/conception-d-un-circuit-integre-avec-qflow). Aujourd'hui, je vais te montrer comment faire la même chose avec OpenRoad.
 
-Le [projet OpenRoad](https://theopenroadproject.org/) (“Foundations and Realization of Open, Accessible Design”) vise à simplifier la conception de circuits intégrés. Ils développent l'outil [OpenROAD](https://openroad.readthedocs.io/en/latest/) qui à partir d'une netlist s'occupe du P&R et cie pour générer un GDSII (voir journal précédent) ansi qu'un [flot RTL to GDSII complet](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts).
+Le [projet OpenRoad](https://theopenroadproject.org/) (“Foundations and Realization of Open, Accessible Design”) vise à simplifier la conception de circuits intégrés. Ils développent l'outil [OpenROAD](https://openroad.readthedocs.io/en/latest/) qui à partir d'une netlist s'occupe du P&R et cie pour générer un GDSII (voir journal précédent) ainsi qu'un [flot RTL to GDSII complet](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts).
 
 
 ## Installation de OpenRoad
@@ -17,6 +17,7 @@ Mais globalement,
 - compilation via Docker: [RTFM](https://openroad-flow-scripts.readthedocs.io/en/latest/user/BuildWithDocker.html)
 - compilation depuis les sources: [RTFM](https://openroad-flow-scripts.readthedocs.io/en/latest/user/BuildLocally.html)
 - [nix](https://fr.wikipedia.org/wiki/Nix_(gestionnaire_de_paquets)) flake. Cadeau, mon `flake.nix` :
+
 ```nix
 {
   inputs = {
@@ -117,7 +118,7 @@ $ git clone https://github.com/YosysHQ/picorv32.git picorv32
 
 Normalement, on est censé mettre son design dans `openroad-flow-scripts/flow/designs/src/mondesign/` et la configuration dans `openroad-flow-scripts/flow/designs/<techno>/mondesign/`, puis faire un coup de `cd openroad-flow-scripts/flow/; make DESIGN_CONFIG=designs/<techno>/mondesign/config.mk` pour faire des chocapics.
 
-Mais je trouve ça assez bof de bosser dans le dépot git d'un autre projet. Du coup on va foutre notre bazar ailleurs
+Mais je trouve ça assez bof de bosser dans le dépôt git d'un autre projet. Du coup on va foutre notre bazar ailleurs
 
 ### Création du design
 
