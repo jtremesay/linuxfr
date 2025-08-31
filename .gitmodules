@@ -1,3 +1,6 @@
 [submodule "journaux/conception_dun_circuit_integre_avec_openroad/openroad-flow-scripts"]
 	path = journaux/conception_dun_circuit_integre_avec_openroad/openroad-flow-scripts
 	url = https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts.git
+[submodule "journaux/conception_dun_circuit_integre_avec_openroad/picorv32"]
+	path = journaux/conception_dun_circuit_integre_avec_openroad/picorv32
+	url = https://github.com/YosysHQ/picorv32.git
