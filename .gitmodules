@@ -1,0 +1,3 @@
+[submodule "journaux/conception_dun_circuit_integre_avec_openroad/openroad-flow-scripts"]
+	path = journaux/conception_dun_circuit_integre_avec_openroad/openroad-flow-scripts
+	url = https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts.git
